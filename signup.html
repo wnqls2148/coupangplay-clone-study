@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!-- HTML5 문서임을 명시 -->
+<html lang="ko"> <!-- 문서 언어를 한국어로 설정 -->
+<head>
+  <meta charset="UTF-8"> <!-- 문자 인코딩을 UTF-8로 설정 -->
+  <title>회원가입 - 쿠팡플레이</title> <!-- 브라우저 탭에 표시될 제목 -->
+  <link rel="stylesheet" href="style.css"> <!-- 외부 CSS 파일 연결 -->
+</head>
+<body>
+
+  <div class="signup-container"> <!-- 회원가입 전체 영역을 감싸는 div -->
+    <h1>회원가입</h1> <!-- 페이지 제목 -->
+
+    <form action="/signup" method="POST"> <!-- 회원가입 폼 시작, POST 방식으로 전송 -->
+
+      <label for="username">이름</label> <!-- 사용자 이름 라벨 -->
+      <input type="text" id="username" name="username" required> <!-- 이름 입력 필드 -->
+
+      <label for="email">이메일</label> <!-- 이메일 라벨 -->
+      <input type="email" id="email" name="email" required> <!-- 이메일 입력 필드 -->
+
+      <label for="password">비밀번호</label> <!-- 비밀번호 라벨 -->
+      <input type="password" id="password" name="password" required> <!-- 비밀번호 입력 필드 -->
+
+      <label for="confirm-password">비밀번호 확인</label> <!-- 비밀번호 확인 라벨 -->
+      <input type="password" id="confirm-password" name="confirm-password" required> <!-- 확인 입력 필드 -->
+
+      <button type="submit">가입하기</button> <!-- 가입하기 버튼 -->
+    </form>
+
+    <p>이미 계정이 있으신가요? <a href="login.html">로그인</a></p> <!-- 로그인 페이지 링크 안내 -->
+  </div>
+
+</body>
+</html>
+
